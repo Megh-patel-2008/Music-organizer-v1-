@@ -34,15 +34,6 @@ Work done by : Megh Patel & Noel Joseph Jovero
 11.files.add(FavoriteTrack);
 12.dates.remove(2);
 13.It becomes index 5
-14.public boolean checkIndex(index)
-    {
-        if(index >= 0 && index < files.size()-1){
-        return true;
-        }
-        else{
-            return false;
-            System.out.print("Teh valid range is " + index);
-        }
-    }
-15.
+14.In the source code
+15.In the source code
 16.
