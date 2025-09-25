@@ -43,7 +43,8 @@ public class MusicOrganizer
      */
     public void listFile(int index)
     {
-        if(index >= 0 && index < files.size()) {
+        if(validIndex(index)) {
+            //Question 16
             String filename = files.get(index);
             System.out.println(filename);
         }
@@ -55,7 +56,8 @@ public class MusicOrganizer
      */
     public void removeFile(int index)
     {
-        if(index >= 0 && index < files.size()) {
+        if(validIndex(index)) {
+            //question 16
             files.remove(index);
         }
     }
@@ -63,11 +65,7 @@ public class MusicOrganizer
     {
         //question 14
         if(index >= 0 && index < files.size()-1){
-        
-        }
-        else{
             System.out.print("The valid range is " + index);
-            
         }
     }
     public boolean validIndex(int index){

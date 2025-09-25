@@ -34,6 +34,21 @@ Work done by : Megh Patel & Noel Joseph Jovero
 11.files.add(FavoriteTrack);
 12.dates.remove(2);
 13.It becomes index 5
-14.In the source code
-15.In the source code
+14.public void checkIndex(int index)
+    {
+        //question 14
+        if(index >= 0 && index < files.size()-1){
+            System.out.print("The valid range is " + index);
+        }
+    }
+15.public boolean validIndex(int index){
+        //Question 15
+        if(index >= 0 && index < files.size()-1){
+        return true;
+        }
+        else{
+            System.out.print("The valid range is " + index);
+            return false;
+        }
+    }
 16.
